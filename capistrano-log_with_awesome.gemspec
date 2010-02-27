@@ -20,10 +20,14 @@ Gem::Specification.new do |s|
     ".gitignore",
      "Capfile",
      "LICENSE",
+     "README.rdoc",
+     "Rakefile",
+     "capistrano-log_with_awesome.gemspec",
      "examples/campfire.rb.example",
      "examples/raise.rb",
      "examples/upload.rb",
-     "lib/capistrano/log_with_awesome.rb"
+     "lib/capistrano/log_with_awesome.rb",
+     "lib/capistrano/log_with_awesome/version.rb"
   ]
   s.homepage = %q{http://github.com/jnewland/capistrano-log_with_awesome}
   s.rdoc_options = ["--charset=UTF-8"]
