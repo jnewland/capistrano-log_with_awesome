@@ -1,0 +1,10 @@
+require 'json'
+require 'tinder'
+campfire = Tinder::Campfire.new 'yourdomain', :ssl => true
+campfire.login 'APIKEY', 'X'
+set :room, campfire.find_room_by_name('Log')
+
+# Log every single cap log line to Campfire. Insane.
+on :log_message do
+  room.speak message
+end
