@@ -2,6 +2,10 @@
 
 Awesome callbacks for capistrano logging.
 
+Install the gem:
+
+  gem install capistrano-log_with_awesome
+
 Require the gem in your <tt>config/deploy.rb</tt> or <tt>Capfile</tt>:
 
   require 'capistrano/log_with_awesome'
