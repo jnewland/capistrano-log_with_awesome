@@ -4,12 +4,12 @@ campfire = Tinder::Campfire.new 'yourdomain', :ssl => true
 campfire.login 'APIKEY', 'X'
 set :room, campfire.find_room_by_name('Log')
 
-# Paste the full log to campfire after a deploy
+# Paste the full log to Campfire after a deploy
 on :exit do
   room.paste full_log
 end
 
-# Log every single cap log line to Campfire. Insane.
+# Log every single cap log line to Campfire, as it happens. Insane.
 on :log_message do
   room.speak message
 end
