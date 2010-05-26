@@ -53,6 +53,8 @@ end
 # load last in order to repoen rather than define
 require 'capistrano/log_with_awesome/version'
 
-Capistrano::Configuration.instance.load do
-  Capistrano::LogWithAwesome.init(self)
+if Capistrano::Configuration.instance
+  Capistrano::Configuration.instance.load do
+    Capistrano::LogWithAwesome.init(self)
+  end
 end
