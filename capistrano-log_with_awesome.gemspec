@@ -5,38 +5,39 @@
 
 Gem::Specification.new do |s|
   s.name = %q{capistrano-log_with_awesome}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jesse Newland"]
-  s.date = %q{2010-02-27}
+  s.date = %q{2010-05-26}
   s.description = %q{logging callbacks for capistrano}
   s.email = %q{jnewland@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
-     "README.rdoc"
+    "README.rdoc"
   ]
   s.files = [
     ".gitignore",
-     "Capfile",
-     "LICENSE",
-     "README.rdoc",
-     "Rakefile",
-     "capistrano-log_with_awesome.gemspec",
-     "examples/campfire.rb.example",
-     "examples/raise.rb",
-     "examples/upload.rb",
-     "lib/capistrano/log_with_awesome.rb",
-     "lib/capistrano/log_with_awesome/version.rb"
+    "Capfile",
+    "LICENSE",
+    "README.rdoc",
+    "Rakefile",
+    "capistrano-log_with_awesome.gemspec",
+    "examples/campfire.rb.example",
+    "examples/raise.rb",
+    "examples/upload.rb",
+    "lib/capistrano-log_with_awesome.rb",
+    "lib/capistrano/log_with_awesome.rb",
+    "lib/capistrano/log_with_awesome/version.rb"
   ]
   s.homepage = %q{http://github.com/jnewland/capistrano-log_with_awesome}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.5}
+  s.rubygems_version = %q{1.3.6}
   s.summary = %q{logging callbacks for capistrano}
   s.test_files = [
     "examples/raise.rb",
-     "examples/upload.rb"
+    "examples/upload.rb"
   ]
 
   if s.respond_to? :specification_version then
