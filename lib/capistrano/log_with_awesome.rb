@@ -23,6 +23,7 @@ module Capistrano
     def log(level, message, line_prefix=nil)
       if level <= self.level
         indent = "%*s" % [Capistrano::Logger::MAX_LEVEL, "*" * (Capistrano::Logger::MAX_LEVEL - level)]
+        message.force_encoding(Encoding.default_external ? Encoding.default_external : 'UTF-8')
         (RUBY_VERSION >= "1.9" ? message.lines : message).each do |line|
           if line_prefix
             self.class.log_with_awesome "#{indent} [#{line_prefix}] #{line.strip}"
